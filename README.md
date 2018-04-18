@@ -26,9 +26,9 @@ elasticsearch.port = 9300
 
 There are 2 apis : 
 
-	1.  [http://localhost:8080/api/log/add](http://localhost:8080/api/log/add)
+1.  http://localhost:8080/api/log/add
 	
-	2.  [http://localhost:8080/api/log/list](http://localhost:8080/api/log/list)
+2.  http://localhost:8080/api/log/list
 	
 	
 
