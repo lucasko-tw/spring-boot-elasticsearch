@@ -25,7 +25,9 @@ elasticsearch.port = 9300
 [http://localhost:8080/swagger-ui.html](http://localhost:8080/swagger-ui.html)
 
 There are 2 apis : 
+
 	1.  [http://localhost:8080/api/log/add](http://localhost:8080/api/log/add)
+	
 	2.  [http://localhost:8080/api/log/list](http://localhost:8080/api/log/list)
 	
 	
@@ -35,10 +37,10 @@ There are 2 apis :
 receive request in controller (APIController.java)
 
 ```java 
-	@GetMapping(path = "/log/add", produces = MediaType.APPLICATION_JSON_VALUE)
-	public String addLog() {
-		return ES_SERVICE.addLog().toString();
-	}
+@GetMapping(path = "/log/add", produces = MediaType.APPLICATION_JSON_VALUE)
+public String addLog() {
+	return ES_SERVICE.addLog().toString();
+}
 ```
 
 
@@ -121,6 +123,7 @@ public SearchHits getEventHits(String index, String type ) {
 	return hits;
 }
 ```
+
 
 
 
